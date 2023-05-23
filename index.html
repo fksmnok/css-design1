@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>duck intro</title>
+	<link rel="stylesheet" href="css/style2.css" type="text/css">
+	<link rel="stylesheet" href="css/reset.css" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+		integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+		integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+		crossorigin="anonymous"></script>
+</head>
+<script>
+	col = new Array("red", "white", "green" ,"blue", "yellow");
+	num = 0;
+	function flashLink() {
+		//myLINK.style.color = col[num++];
+		f_flash.style.color = col[num++];
+		//f_flash1.style.color = col[num++];
+		num %= col.length;
+	}
+	col1 = new Array("yellow", "white", "blue", "red", "green");
+	num1 = 0;
+	function flashLink1() {
+		//myLINK.style.color = col[num++];
+		//f_flash.style.color = col[num++];
+		f_flash1.style.color = col[num1++];
+		num1 %= col1.length;
+	}
+</script>
+
+<body onLoad="setInterval('flashLink(), flashLink1()',100)" id="back">
+
+	<header>
+		<h1 id="myLINK">動物紹介 IN 徳島</h1>
+	</header>
+	<h2 id="flash">徳島県にある動物園の動物について</h2>
+	<p id="intro">"あひる"について紹介したいと思います。なぜ"あひる"かといいますと、徳島の動物園にいったとき、一番印象に残っているからです。なぜかはわからないです。</p>
+	<a href="top.html">
+		<main>
+			<article id="twitter">
+				<img src="img/duckling-g8e67e1dda_1920.jpg">
+				<section>
+					<p id="name">あひる</p>
+					<p id="teNum">@duck</p>
+				</section>
+			</article>
+			<p id="clm">あひるの紹介です。</p>
+			<p id="time">PM3:30 May 19, 2023 </p>
+			<p id="next">♡ 1 〇 1 go to next page(click)</p>
+		</main>
+	</a>
+	<footer>
+		<hr>
+		<h2 id="f_flash" onLoad="setInterval('flashLink()',80)">@Duck</h2>
+		<p id="f_flash1" onLoad="setInterval('flashLink1()',80)">Thank you for your attention.</p>
+	</footer>
+</body>
+
+</html>

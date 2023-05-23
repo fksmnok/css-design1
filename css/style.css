@@ -1,0 +1,168 @@
+body {
+	color: #15202B;
+	letter-spacing: 1px;
+	font-family: monospace;
+}
+a{
+	text-decoration: none !important;
+	color: #fff !important;
+}
+a:hover{
+	color: darkgray !important;
+}
+header {
+	height: 80px;
+	background-color: #15202B;
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+	margin-bottom: 70px;
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 40px;
+	box-sizing: border-box;
+}
+
+header h1 {
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-left: 30px;
+	padding-top: 8px;
+	color: #fff;
+}
+
+#duckImg {
+	margin-top: 100px;
+	display: flex;
+	overflow-x: scroll;
+	margin-bottom: 70px;
+	color: #fff;
+	
+}
+
+#duckImg img {
+	border-radius: 10px;
+	width: 600px;
+	height: 450px;
+	margin: 30px;
+	opacity: 0.8;
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+#duckImg img:hover {
+	opacity: 0.5;
+}
+
+#duckImg::-webkit-scrollbar {
+	display: none;
+}
+
+#icon {
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	margin: 0 auto;
+}
+
+#contents {
+	background-color: #15202B;
+	margin: -60px 200px 100px 200px;
+	border-radius: 5px;
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+	height: 300px;
+	color: #fff;
+}
+
+#contents h2 {
+	text-align: center;
+	font-size: 1rem;
+	font-weight: bold;
+	padding-top: 65px;
+}
+
+#contents h3 {
+	margin-left: 150px;
+	font-size: 1rem;
+	font-weight: bold;
+	margin-top: 30px;
+}
+
+#contents p {
+	margin: 0 150px;
+}
+
+#select {
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 70px;
+	margin-left: 250px;
+	margin-right: 250px;
+	color: #15202B;
+	/*文字色*/
+	padding: 0.5em 0;
+	/*上下の余白*/
+	border-top: solid 3px #15202B;
+	/*上線*/
+	border-bottom: solid 3px #15202B;
+	/*下線*/
+}
+
+video {
+	width: 600px;
+	height: 350;
+	margin: 0 auto;
+}
+
+#movie {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+#movie p {
+	text-align: center;
+}
+
+iframe {
+	margin: 0 auto;
+}
+
+#tokZoo {
+	text-align: center;
+	font-size: 1rem;
+	font-weight: bold;
+	margin-left: 250px;
+	margin-right: 250px;
+	color: #15202B;
+	/*文字色*/
+	padding: 0.5em 0;
+	/*上下の余白*/
+	border-top: solid 3px #15202B;
+	/*上線*/
+	border-bottom: solid 3px #15202B;
+	/*下線*/
+	margin-bottom: 50px;
+}
+
+#movie section {
+	margin-right: 20px;
+}
+
+#movie p {
+	margin-left: 20px;
+}
+
+footer{
+	
+	text-align: center;
+	color: gray;
+	margin: 50px;
+}
+#overview{
+	width: 50%;
+	margin: 0 auto;
+}
+hr{
+	margin-top: 50px;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>duck intro</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/reset.css" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+		integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+		integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+		crossorigin="anonymous"></script>
+</head>
+
+<script>
+	var cxs = document.querySelectorAll('.common-x-scroll');
+	cxs = Array.prototype.slice.call(cxs, 0);
+	cxs.forEach(function (el) {
+		el.addEventListener("wheel", function (e) {
+			if (e.deltaX === 0) {
+				var reg = 1.5;//スクロール量を変更する場合はここを調整
+				el.scrollLeft = el.scrollLeft + e.deltaY * reg;
+				e.preventDefault();
+			}
+		});
+	});
+</script>
+
+<body>
+
+	<header>
+		<h1><a href="../index.html">Duck / アヒル In とくしま動物園</a></h1>
+	</header>
+	<main>
+		<article id="duckImg" class="common-x-scroll">
+			<img src="img/goose-ga67ce1f6e_1920.jpg">
+			<img src="img/birds-gc4a8da211_1920.jpg">
+			<img src="img/ducks-g6e9ce8a1d_1920.jpg">
+		</article>
+
+		<img src="img/duckling-g8e67e1dda_1920.jpg" id="icon">
+		<article id="contents">
+			<h2>アヒルくん</h2>
+			<p>アヒル（鶩、家鴨、鴨）は、水鳥であるカモ科のマガモを原種とする家禽で、生物学的にはマガモと同種である。ヨーロッパや中国などで飼育が始まり、飼育が容易なこともあり、世界中で幅広く飼育されている。</p>
+			<h3>アヒルの用途は？</h3>
+			<p>
+				用途は愛玩、食用、採卵、ダウンジャケットや羽毛布団などの羽毛採集など。 鴨肉として流通しているものの大半はアヒルの肉である。 アヒルとマガモを交配させたアイガモの肉も鴨肉として流通していることもある。</p>
+		</article>
+		<h3 id="tokZoo">とくしま動物園について</h3>
+		<article id="movie">
+			<section>
+				<video controls src="img/IMG_1921.mov">徳島動物園のアヒル</video>
+				<p>とくしま動物園のアヒル</p>
+			</section>
+			<p><iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.1099420718533!2d134.51779551521406!3d34.01538878061602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35530db7fcaf4b59%3A0xfde5e2e044d20ab!2z44Go44GP44GX44G-5YuV54mp5ZyS!5e0!3m2!1sja!2sjp!4v1684462702391!5m2!1sja!2sjp"
+					width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+		</article>
+
+		<article id="overview">
+			<div class="accordion accordion-flush" id="accordionFlushExample">
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="flush-headingOne">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+							開園時間 #1
+						</button>
+					</h2>
+					<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+						data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body">午前9:30～午後16:30 （入園は午後16時まで）</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="flush-headingTwo">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+							休園日 #2
+						</button>
+					</h2>
+					<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+						data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body">毎週月曜日（月曜日が祝日の場合はその翌日が休園日）<br>
+							年末年始　12月29日から31日，1月1日</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="flush-headingThree">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseThree" aria-expanded="false"
+							aria-controls="flush-collapseThree">
+							入園料 #3
+						</button>
+					</h2>
+					<div id="flush-collapseThree" class="accordion-collapse collapse"
+						aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body">大人　600円（中学生以下は無料）<br>
+							年間パスポート　1,500円で1年間入園可能<br>
+							団体割引　有料入園者30人以上，1人480円</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="flush-headingFour">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseFour" aria-expanded="false"
+							aria-controls="flush-collapseFour">
+							駐車料金 #4
+						</button>
+					</h2>
+					<div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+						data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body">普通車　310円（約600台駐車可能）<br>
+							大型車　1,310円<br>
+							二輪車　無料</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="flush-headingFive">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseFive" aria-expanded="false"
+							aria-controls="flush-collapseFive">
+							電話番号 #5
+						</button>
+					</h2>
+					<div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+						data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body">TEL：088-636-3215</div>
+					</div>
+				</div>
+			</div>
+
+		</article>
+	</main>
+	<hr>
+	<footer>
+		<h2>@Duck</h2>
+		<p>Thank you for your attention.</p>
+	</footer>
+</body>
+
+</html>
